@@ -1,0 +1,121 @@
+body{
+    background-color: hsl(233, 47%, 7%);
+    color: #ffff;
+    margin-top: 5rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: small;
+}
+h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: xx-large;
+}
+.container{
+    background-color: hsl(244, 38%, 16%);
+    width: 60%;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin: 0 auto;
+    border-radius: 0.75rem;
+}
+#text{
+    width: 50%;
+    padding-left: 3.5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
+}
+#insight{
+    color: hsl(277, 64%, 61%);
+    font-weight: 700;
+    font-size: xx-large;
+}
+#image{
+    width: 50%;
+    background: hsl(277, 64%, 61%);
+    mix-blend-mode: screen;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%) contrast(100%);
+    opacity: 1;
+    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+}
+#value-sheet{
+    width: 100%;
+}
+.value{
+    display: inline-block;
+    padding-right: 6%;
+}
+.number-value{
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    font-size: large;
+}
+.number-value{
+    margin-bottom: 0.2rem;
+    padding-bottom: 0;
+}
+.category{
+    margin-top: 0;
+    padding-top: 0;
+}
+.attribution{
+    text-align: center;
+}
+.copyright{
+    color: #ffff;
+    text-decoration: none;
+    text-align: center;
+}
+@media(max-width: 30rem) and (min-width: 12.5rem){
+    body{
+        padding: 2rem;
+    }
+    .container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #image{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0.75;
+        border-bottom-right-radius: 0;
+    }
+    #text{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #title{
+        width: 80%;
+    }
+    #main-text{
+        width: 75%;
+    }
+    #value-sheet{
+        display: flex;
+        flex-direction: column;
+    }
+    .number-value{
+        margin-bottom: 0.1rem;
+        padding-bottom: 0;
+    }
+    .category{
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
